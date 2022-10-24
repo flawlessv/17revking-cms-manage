@@ -1,0 +1,17 @@
+.login {
+  background-color: #fff;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+.login .login_box {
+  width: 450px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.login .login_box img {
+  display: block;
+  margin: 15px auto;
+}

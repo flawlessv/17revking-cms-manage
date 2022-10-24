@@ -1,14 +1,23 @@
 import React from 'react'
-import './assets/base.css'
-import { Button } from 'antd';
+import { Layout } from 'antd';
+import './assets/base.less'
 import { Outlet } from 'react-router';
+import Asider from './components/Asider';
+import Header from './components/Header';
+import Bread from './components/Bread'
 export default function App() {
+
   return (
-    <div>
-  <Button type="primary" ghost>
-      Primary
-    </Button>
+    <Layout id='app'>
+ <Header />
+    <Layout className='layout'>
+   <Asider /> 
+<div className='content'> 
+<Bread />
 <Outlet />
-    </div>
+</div>
+    </Layout>
+    <footer>Respect | Copyright &copy; 2022 Author 秋一漫漫</footer>
+  </Layout>
   )
 }

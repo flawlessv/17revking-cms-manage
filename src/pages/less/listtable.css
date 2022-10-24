@@ -1,0 +1,10 @@
+.list_table {
+  background-color: #fff;
+  overflow: auto;
+}
+.list_table .table_title {
+  color: #333;
+}
+.list_table .table_title:hover {
+  color: #1890FF;
+}
